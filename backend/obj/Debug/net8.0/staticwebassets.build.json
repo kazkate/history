@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "EQxpLeAAbcfii4BXB1KmhezrRWB7McOp8ZREo60pPTw=",
+  "Source": "backend",
+  "BasePath": "_content/backend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "backend\\wwwroot",
+      "Source": "backend",
+      "ContentRoot": "X:\\8semester\\Программирование сетевых приложений\\history\\backend\\wwwroot\\",
+      "BasePath": "_content/backend",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "X:\\8semester\\Программирование сетевых приложений\\history\\backend\\wwwroot\\img\\dorogaya-sobaka_9837b3b9-bce5-487c-a1bd-98b526ba5ada.jpg",
+      "SourceId": "backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "X:\\8semester\\Программирование сетевых приложений\\history\\backend\\wwwroot\\",
+      "BasePath": "_content/backend",
+      "RelativePath": "img/dorogaya-sobaka_9837b3b9-bce5-487c-a1bd-98b526ba5ada.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\dorogaya-sobaka_9837b3b9-bce5-487c-a1bd-98b526ba5ada.jpg"
+    }
+  ]
+}
