@@ -46,6 +46,6 @@ public class ApplicationContext : DbContext {
         var dbName = Environment.GetEnvironmentVariable("DB_NAME") ?? "stories";
 
         // optionsBuilder.UseNpgsql($"Host={dbHost};Port={dbPort};Database={dbName};Username={dbUsername};Password={dbPassword}");
-        optionsBuilder.UseNpgsql("Host=localhost; Port=5432;Database=stories;Username=postgres;Password=1234");
+        optionsBuilder.UseNpgsql("Host=postgres; Port=5432;Database=stories;Username=postgres;Password=1234");
     }
 }
