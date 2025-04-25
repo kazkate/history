@@ -21,7 +21,8 @@ import {
 
 import axios from "axios";
 import { getLogin } from "../../auth.service";
-const client = axios.create({ baseURL: "https://localhost:5001" });
+// const client = axios.create({ baseURL: "https://localhost:5001" });
+const client = axios.create({ baseURL: "/" });
 
 async function sendToServer(
     title: string,

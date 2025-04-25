@@ -22,7 +22,8 @@ export interface UserInfo {
     authData: string;
 }
 
-const client = axios.create({ baseURL: "https://localhost:5001" });
+// const client = axios.create({ baseURL: "https://localhost:5001" });
+const client = axios.create({ baseURL: "/" });
 
 async function sendToServer(
     lastName: string,

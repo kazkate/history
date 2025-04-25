@@ -146,3 +146,4 @@ X:\8semester\Программирование сетевых приложени�
 X:\8semester\Программирование сетевых приложений\history\backend\obj\Debug\net8.0\backend.pdb
 X:\8semester\Программирование сетевых приложений\history\backend\obj\Debug\net8.0\backend.genruntimeconfig.cache
 X:\8semester\Программирование сетевых приложений\history\backend\obj\Debug\net8.0\ref\backend.dll
+X:\8semester\Программирование сетевых приложений\history\backend\obj\Debug\net8.0\backend.sourcelink.json

@@ -2,7 +2,8 @@ import axios from "axios";
 import { UserInfo } from "./components/Registration/Registration";
 const isAuthenticated = localStorage.getItem("isAuthenticated");
 
-const client = axios.create({ baseURL: "http://localhost:5001" });
+// const client = axios.create({ baseURL: "http://localhost:5001" });
+const client = axios.create({ baseURL: "/" });
 
 export function clientSetHeader(name: string, value: string) {
     if (value) {

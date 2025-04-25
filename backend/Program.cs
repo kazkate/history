@@ -34,11 +34,11 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddControllers();
-builder.Services.AddCors(options => {
-    options.AddPolicy("AllowLocalhost3000", builder => {
-        builder.WithOrigins("http://localhost:3000").AllowAnyHeader().AllowAnyMethod();
-    });
-});
+// builder.Services.AddCors(options => {
+//     options.AddPolicy("AllowLocalhost3000", builder => {
+//         builder.WithOrigins("http://localhost:3000").AllowAnyHeader().AllowAnyMethod();
+//     });
+// });
 // builder.WebHost.ConfigureKestrel(options =>
 // {
 //     options.ConfigureHttpsDefaults(o => o.SslProtocols = System.Security.Authentication.SslProtocols.None);
