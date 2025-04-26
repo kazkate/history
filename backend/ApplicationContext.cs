@@ -39,13 +39,13 @@ public class ApplicationContext : DbContext {
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        var dbHost = Environment.GetEnvironmentVariable("DB_HOST") ?? "localhost";
+        var dbHost = Environment.GetEnvironmentVariable("DB_HOST") ?? "postgres";
         var dbPort = Environment.GetEnvironmentVariable("DB_PORT") ?? "5432";
         var dbUsername = Environment.GetEnvironmentVariable("DB_USERNAME") ?? "postgres";
         var dbPassword = Environment.GetEnvironmentVariable("DB_PASSWORD") ?? "1234";
         var dbName = Environment.GetEnvironmentVariable("DB_NAME") ?? "stories";
 
-        // optionsBuilder.UseNpgsql($"Host={dbHost};Port={dbPort};Database={dbName};Username={dbUsername};Password={dbPassword}");
-        optionsBuilder.UseNpgsql("Host=postgres; Port=5432;Database=stories;Username=postgres;Password=1234");
+        optionsBuilder.UseNpgsql($"Host={dbHost};Port={dbPort};Database={dbName};Username={dbUsername};Password={dbPassword}");
+        // optionsBuilder.UseNpgsql("Host=postgres; Port=5432;Database=stories;Username=postgres;Password=1234");
     }
 }
