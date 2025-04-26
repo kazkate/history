@@ -21,7 +21,7 @@ import {
 
 import axios from "axios";
 import { getLogin } from "../../auth.service";
-// const client = axios.create({ baseURL: "https://localhost:5001" });
+// const client = axios.create({ baseURL: "http://localhost:5280" });
 const client = axios.create({ baseURL: "/api/" });
 
 async function sendToServer(
@@ -247,7 +247,7 @@ export function AddStory() {
                         </Tooltip>
                     </FormGroup>
 
-                    <FormGroup>
+                    {/* <FormGroup>
                         <Label>
                             Выберите файл{" "}
                             {errors.file && <MyError>{errors.file}</MyError>}
@@ -265,7 +265,7 @@ export function AddStory() {
                                 }
                             />
                         </Tooltip>
-                    </FormGroup>
+                    </FormGroup> */}
                 </Part>
 
                 <Part>

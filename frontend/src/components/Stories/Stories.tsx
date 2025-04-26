@@ -26,8 +26,9 @@ import axios from "axios";
 import { useNavigate } from "react-router";
 import Select from "react-select";
 
-// const client = axios.create({ baseURL: "https://localhost:5001" });
+// const client = axios.create({ baseURL: "http://localhost:5280" });
 const client = axios.create({ baseURL: "/api/" });
+// const client = axios.create({ baseURL: "/" });
 async function GetStories() {
     try {
         console.log();
@@ -126,7 +127,7 @@ export function Stories() {
             formData.append("author", selectedAuthor);
             formData.append("minSymbols", String(minWordCount));
             formData.append("maxSymbols", String(maxWordCount));
-            formData.append("pictures", imageFilter);
+            // formData.append("pictures", imageFilter);
             const response = await client.post(
                 "/GetStoryList/FilterdedByAllParametrsStories",
                 formData
@@ -314,8 +315,8 @@ export function Stories() {
                         }
                     />
                 </div>
-
-                <p>
+                <p></p>
+                {/* <p>
                     <strong>Картинки автора</strong>
                 </p>
 
@@ -348,7 +349,7 @@ export function Stories() {
                         />
                         <label>все равно</label>
                     </Listli>
-                </List>
+                </List> */}
                 <Button onClick={fetchFilteredStories}>Применить</Button>
             </Sidebar>
             <Content>
@@ -452,11 +453,11 @@ export function Card(prop: StoryCardProps) {
                 }}
             >
                 <ContainerForImg>
-                    {prop.picture == "base.jpg" ? (
-                        <NotPicture>нет картинки</NotPicture>
-                    ) : (
-                        <StoryCardImg src={"/images/" + prop.picture} />
-                    )}
+                    {/* {prop.picture == "base.jpg" ? ( */}
+                    <NotPicture></NotPicture>
+                    {/* // ) : (
+                    //     <StoryCardImg src={"/images/" + prop.picture} />
+                    // )} */}
                 </ContainerForImg>
                 <ContainerForInfo>
                     <StoryInfo>

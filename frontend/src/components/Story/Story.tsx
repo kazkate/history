@@ -19,8 +19,9 @@ import { useParams } from "react-router";
 import { format } from "date-fns";
 import { ru } from "date-fns/locale";
 
-// const client = axios.create({ baseURL: "https://localhost:5001" });
+// const client = axios.create({ baseURL: "http://localhost:5280" });
 const client = axios.create({ baseURL: "/api/" });
+// const client = axios.create({ baseURL: "/" });
 async function GetStory(id: string) {
     try {
         console.log();
@@ -125,11 +126,11 @@ export function Story() {
         <Container>
             <StoryContainer>
                 <SliderContainer>
-                    {pathPicture == "base.jpg" ? (
-                        <NotPicture>нет картинки</NotPicture>
-                    ) : (
-                        <StoryCardImg src={"/images/" + pathPicture} />
-                    )}
+                    {/* {pathPicture == "base.jpg" ? ( */}
+                    <NotPicture></NotPicture>
+                    {/* // ) : (
+                    //     <StoryCardImg src={"/images/" + pathPicture} />
+                    // )} */}
                 </SliderContainer>
                 <StoryInfo>
                     <H1>{name}</H1>
