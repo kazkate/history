@@ -22,7 +22,7 @@ import {
 import axios from "axios";
 import { getLogin } from "../../auth.service";
 // const client = axios.create({ baseURL: "https://localhost:5001" });
-const client = axios.create({ baseURL: "/" });
+const client = axios.create({ baseURL: "/api/" });
 
 async function sendToServer(
     title: string,

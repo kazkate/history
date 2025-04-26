@@ -1,1 +1,3 @@
 frontend/node_modules/
+backend/bin/Debug
+backend/obj/Debug

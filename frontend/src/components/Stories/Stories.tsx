@@ -1,7 +1,7 @@
 import { SetStateAction, useEffect, useState } from "react";
 import { format } from "date-fns";
 import { ru } from "date-fns/locale";
-import debounce from "lodash.debounce";
+import debounce from "lodash/debounce";
 import {
     Button,
     Container,
@@ -27,7 +27,7 @@ import { useNavigate } from "react-router";
 import Select from "react-select";
 
 // const client = axios.create({ baseURL: "https://localhost:5001" });
-const client = axios.create({ baseURL: "/" });
+const client = axios.create({ baseURL: "/api/" });
 async function GetStories() {
     try {
         console.log();

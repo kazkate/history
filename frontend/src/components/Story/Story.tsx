@@ -20,7 +20,7 @@ import { format } from "date-fns";
 import { ru } from "date-fns/locale";
 
 // const client = axios.create({ baseURL: "https://localhost:5001" });
-const client = axios.create({ baseURL: "/" });
+const client = axios.create({ baseURL: "/api/" });
 async function GetStory(id: string) {
     try {
         console.log();
